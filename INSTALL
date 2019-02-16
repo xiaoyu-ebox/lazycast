@@ -1,0 +1,12 @@
+sudo ln -s /usr/lib/arm-linux-gnueabihf/libavcodec.so.57 /usr/lib/libavcodec.so
+sudo ln -s /usr/lib/arm-linux-gnueabihf/libavformat.so.57 /usr/lib/libsvformat.so
+sudo ln -s /usr/lib/arm-linux-gnueabihf/libavunit.so.55 /usr/lib/libavunit.so
+
+cd /opt/vc/src/hello_pi/ && rebuild.sh
+
+1.build h264
+cd h264 && make
+
+2.build control
+cd control && make
+
